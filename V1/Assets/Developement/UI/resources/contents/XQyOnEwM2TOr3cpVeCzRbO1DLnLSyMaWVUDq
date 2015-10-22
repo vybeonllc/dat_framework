@@ -1,0 +1,10 @@
+﻿<li role="headertemplate">Databases</li>
+<li role="itemplaceholder">
+    <li role="itemtemplate">
+        <span data-field="database_name"></span>
+        <span data-field="table_name"></span>
+        <button commandname="doit" commandarg="database_name"></button>
+    </li>
+</li>
+<li role="emptyitemtemplate">No ranking for lead.</li>
+<li role="footertemplate"></li>

@@ -1,0 +1,30 @@
+<div role='itemtemplate' >
+
+            <fieldset>
+                <legend>Congratulations!</legend>
+                <p>
+                    <b>Congratulations, your business DOES Qualify. I have a promo code here that will 
+                                save you $99 today and get your business in front of new customers for as little 
+                                as $5 per month. That's a 50% discount today with this promo.</b>
+                </p>
+                <p>
+                    <b>Hop on your computer and go to www.29prime.com to enter your promo code to see your savings today.</b>
+                </p>
+                <p>
+                    <b>Not at a computer? No problem - let me send the promo code to your email so you can click on it when you get home.  
+                                The discount is good for 24 hours.  Click on it today to get your business in front of new customers - 
+                                let me confirm your email address...</b>
+                </p>
+                <p>
+                
+                </p>
+                <p>
+                    <b>Your Promo Code is - <span data-field="promo_code"></span></b>
+                </p>
+                
+            </fieldset>
+        </div>
+<div role='emptyitemtemplate' >
+
+            No data retrived.
+        </div>

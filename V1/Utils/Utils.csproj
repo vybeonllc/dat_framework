@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D360B86-F6BB-484F-93E4-6A47E7999A87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dat.V1.Utils</RootNamespace>
+    <AssemblyName>Dat.V1.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\Staging\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\UtilsAttributes.cs" />
+    <Compile Include="Common\ConnectionStrings.cs" />
+    <Compile Include="Data\Attributes\DataAttribute.cs" />
+    <Compile Include="Data\Attributes\MappingAttribute.cs" />
+    <Compile Include="Documentation\Attributes\AuthorAttribute.cs" />
+    <Compile Include="Documentation\Attributes\SeeAlsoAttribute.cs" />
+    <Compile Include="Documentation\Attributes\DocumentationAttribute.cs" />
+    <Compile Include="Documentation\Attributes\ExceptionInfoAttribute.cs" />
+    <Compile Include="Documentation\Attributes\FunctionParameterInfoAttribute.cs" />
+    <Compile Include="Documentation\Attributes\FunctionReturnTypeAttribute.cs" />
+    <Compile Include="Documentation\Attributes\MemberInfoAttribute.cs" />
+    <Compile Include="Documentation\Attributes\NoteAttribute.cs" />
+    <Compile Include="Documentation\Attributes\QualityOfAssuranceAttribute.cs" />
+    <Compile Include="Documentation\Enumerations\QualityOfAssuranceStatus.cs" />
+    <Compile Include="EventArgs\UtilsEventArg.cs" />
+    <Compile Include="Extensions\DataHelper.cs" />
+    <Compile Include="Localization\Contants\SupportedLanguages.cs" />
+    <Compile Include="Net\Dns.cs" />
+    <Compile Include="Net\WebRequest.cs" />
+    <Compile Include="Reflection\AssemblyInfo.cs" />
+    <Compile Include="Reflection\AttributeInfo.cs" />
+    <Compile Include="Reflection\ExceptionInfo.cs" />
+    <Compile Include="Reflection\ParameterInfo.cs" />
+    <Compile Include="Reflection\StructureInfo.cs" />
+    <Compile Include="Reflection\EnumInfo.cs" />
+    <Compile Include="Reflection\InterfaceInfo.cs" />
+    <Compile Include="Reflection\MemberInfoClass.cs" />
+    <Compile Include="Reflection\NamespaceInfo.cs" />
+    <Compile Include="Reflection\TypeInfo.cs" />
+    <Compile Include="Serialization\HTML\Serializer.cs" />
+    <Compile Include="Serialization\CSV\Serializer.cs" />
+    <Compile Include="Threading\EventArgs\ThreadingEventArg.cs" />
+    <Compile Include="Threading\Exceptions\ThreadingException.cs" />
+    <Compile Include="Threading\TaskManager\EventArgs\TaskAdded.cs" />
+    <Compile Include="Threading\TaskManager\EventArgs\TaskCompletedEventArgs.cs" />
+    <Compile Include="Threading\TaskManager\EventArgs\TaskFailedEventArgs.cs" />
+    <Compile Include="Threading\TaskManager\EventArgs\TaskManagerEventArg.cs" />
+    <Compile Include="Threading\TaskManager\Exceptions\TaskManagerException.cs" />
+    <Compile Include="Threading\TaskManager\TaskInfo.cs" />
+    <Compile Include="Threading\TaskManager\TaskManager.cs" />
+    <Compile Include="Validation\Attributes\AlphabeticWithNoSpaceAttribute.cs" />
+    <Compile Include="Validation\Attributes\AlphabeticWithSpaceAttribute.cs" />
+    <Compile Include="Validation\Attributes\AlphaNumericAttribute.cs" />
+    <Compile Include="Validation\Attributes\EmailAddressAttribute.cs" />
+    <Compile Include="Validation\Attributes\IntegerNumberAttribute.cs" />
+    <Compile Include="Validation\Attributes\IsBetweenAttribute.cs" />
+    <Compile Include="Validation\Attributes\IsLengthBetweenAttribute.cs" />
+    <Compile Include="Validation\Attributes\IsNumericAttribute.cs" />
+    <Compile Include="Validation\Attributes\LengthNotGreaterThanAttribute.cs" />
+    <Compile Include="Validation\Attributes\LengthNotLessThanAttribute.cs" />
+    <Compile Include="Validation\Attributes\NegativeIntegerNumberAttribute.cs" />
+    <Compile Include="Validation\Attributes\NegativeNumberAttribute.cs" />
+    <Compile Include="Validation\Attributes\NotGreaterThanAttribute.cs" />
+    <Compile Include="Validation\Attributes\NotLessThanAttribute.cs" />
+    <Compile Include="Validation\Attributes\NotNullAttribute.cs" />
+    <Compile Include="Validation\Attributes\PasswordAttribute.cs" />
+    <Compile Include="Validation\Attributes\PositiveIntegerNumberAttribute.cs" />
+    <Compile Include="Validation\Attributes\PositiveNumberAttribute.cs" />
+    <Compile Include="Validation\Attributes\RegularExpressionAttribute.cs" />
+    <Compile Include="Validation\Attributes\RequiredAttribute.cs" />
+    <Compile Include="Validation\Attributes\SocialSecurityAttribute.cs" />
+    <Compile Include="Validation\Attributes\StringFormatAttribute.cs" />
+    <Compile Include="Validation\Attributes\UsernameAttribute.cs" />
+    <Compile Include="Validation\Attributes\ValidationAttribute.cs" />
+    <Compile Include="Validation\Attributes\ZipCodeAttribute.cs" />
+    <Compile Include="Validation\Constants\ExceptionMessages.cs" />
+    <Compile Include="Validation\Constants\RegularExpressionPatterns.cs" />
+    <Compile Include="Validation\Enumerations\Action.cs" />
+    <Compile Include="Validation\Enumerations\PasswordType.cs" />
+    <Compile Include="Validation\Exceptions\IsRequiredException.cs" />
+    <Compile Include="Validation\Exceptions\LengthNotBetweenMaxAndMinValuesException.cs" />
+    <Compile Include="Validation\Exceptions\LengthNotGreaterThanValueException.cs" />
+    <Compile Include="Validation\Exceptions\LengthNotLessThanValueException.cs" />
+    <Compile Include="Validation\Exceptions\NotBetweenMaxAndMinValuesException.cs" />
+    <Compile Include="Validation\Exceptions\NotGreaterThanValueException.cs" />
+    <Compile Include="Validation\Exceptions\NotLessThanValueException.cs" />
+    <Compile Include="Validation\Exceptions\NotMatchRegularExpressionPatternException.cs" />
+    <Compile Include="Validation\Exceptions\NotNullException.cs" />
+    <Compile Include="Validation\Exceptions\ValidationException.cs" />
+    <Compile Include="Validation\Validators\Asserts.cs" />
+    <Compile Include="Validation\Validators\PropertyValidator.cs" />
+    <Compile Include="Validation\Validators\Validator.cs" />
+    <Compile Include="Enumerations\DataExchangeFormats.cs" />
+    <Compile Include="Enumerations\HttpVerbs.cs" />
+    <Compile Include="Exceptions\UtilsException.cs" />
+    <Compile Include="Extensions\IEnumerableHelper.cs" />
+    <Compile Include="Extensions\StringHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\ISerializable.cs" />
+    <Compile Include="Serialization\JSON\Serializer.cs" />
+    <Compile Include="Serialization\XML\Serializer.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body runat="server" id="body">
+    <dat:Page ID="Page1" runat="server" Title="Welcome to this website" />
+    <dat:AssetReference ID="Reference2"  AssetName="Training" runat="server" />
+    <dat:ListView runat="server" ID="test"   ContainerElement="#Dat" OnReady="Dat.V1.UI.Prospectfuel.Step1.ListView1.EventHandlers.OnReady" OnInitialized="Dat.V1.UI.Prospectfuel.Step1.ListView1.EventHandlers.OnInit">
+        <databinder runat="server" id="databinder" AssetName="Training">
+            <SelectCommand Target="Dat.V1.Services.Training.Base.Trainee.Load" />
+        </databinder>
+        <ItemTemplate>
+            <input type="text" id="username" />
+            <div id="textboxcontainer" data-field="postal_code"></div>
+        </ItemTemplate>
+        <EmptyItemTemplate>
+            There is no data avialable at this time.
+        </EmptyItemTemplate>
+    </dat:ListView>
+     <dat:FormView runat="server" ID="FormView1"   ContainerElement="#Dat" OnReady="Dat.V1.UI.Prospectfuel.Step1.FormView1.EventHandlers.OnReady" OnInitialized="Dat.V1.UI.Prospectfuel.Step1.FormView1.EventHandlers.OnInit">
+        <databinder runat="server" id="databinder1"  PrimaryKey="location_id" AssetName="Standards" >
+            <SelectCommand Target="Dat.V1.Services.Standards.GeoLocation.PostalCode.Get" />
+            <CreateCommand Target="Dat.V1.Services.Standards.GeoLocation.PostalCode.Put" DataItemPropertyName="postal_code" />
+            <UpdateCommand Target="Dat.V1.Services.Standards.GeoLocation.PostalCode.Post" DataItemPropertyName="postal_code" />
+        </databinder>
+        <ItemTemplate>
+         <li><input type="text" id="username" data-field="postal_code" />
+         
+             <input type="button" name="data-submit" value="submit" />
+         </li>   
+
+        </ItemTemplate>
+        <EmptyItemTemplate>
+            There is no data avialable at this time.
+        </EmptyItemTemplate>
+    </dat:FormView>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div role='itemtemplate' >
+
+            <fieldset >
+                <legend>Address</legend>
+                <p><b>What is your first and last name?</b></p>
+                <p>
+                    <label for="firstname">First Name</label>
+                    <input id="firstname" name="firstname" placeholder="First Name" type="text" data-field="first_name" autocomplete="off" />
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname" name="lastname" placeholder="Last Name" type="text" data-field="last_name" autocomplete="off" />
+                </p>
+                <p><b>What is the name of the business?</b></p>
+                <p>
+                    <label>Business Name</label>
+                    <input type="text" id="businessname" name="businessname" placeholder="Business Name" data-field="business_name" autocomplete="off" />
+                </p>
+                <p><b>Is this the primary business line that we are speaking on right now?</b></p>
+                <p>
+                    <label>Business Number</label>
+                    <input type="text" id="Text3" name="" placeholder="Primary Business Line" data-field="alternate_phone_number" autocomplete="off" />
+                </p>
+                <p><b>What type of Industry is your business?</b></p>
+                <p>
+                    <label>Industry</label>
+                    <input type="text" id="Text4" name="Industry" placeholder="Industry" data-field="industry" autocomplete="off" />
+                </p>
+                <p>
+                    <button type="button" placeholder="Previous" commandname="PreviousStep" commandarg="organization_id" autocomplete="off">Previous</button>
+                    <button type="button" name="data-submit" placeholder="Next" autocomplete="off">Next</button>
+                </p>
+            </fieldset>
+        </div>
+<div role='emptyitemtemplate' >
+
+            No data retrived.
+        </div>

@@ -1,0 +1,63 @@
+<div role='itemtemplate' >
+
+            <fieldset >
+                <legend>Industry Description</legend>
+                    <input type="hidden" id="Text4" name="ContactId" data-field="contact_id" autocomplete="off" />
+
+                <p><b>Do you currently have a Website?</b></p>
+                <p>
+                    <select data-field="has_website">
+                        <option value="">--Select One--</option>
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </p>
+                <p>
+                    <b>What service or product do you make the most from that you sell?</b><br />
+                    Example: Water Heaters, Shoes, Magazines etc
+                </p>
+                <p>
+                    <label>Most Profitable Product</label>
+                    <input type="text" id="Text7" name="" placeholder="Most Profitable Product" data-field="most_profitable_product" data-nullable="true" autocomplete="off" />
+                </p>
+                <p><b>How long have you been in business?</b></p>
+                <p>
+                    <label for="cardtype">Business Age</label>
+                    <select id="cardtype" name="cardtype" data-nullable="true" data-field="business_start_date">
+                        <option>0 - 6 Months</option>
+                        <option>6 - 12 Months</option>
+                        <option>1 - 2 Years</option>
+                        <option>2 - 5 Years</option>
+                        <option>5+ Years</option>
+                    </select>
+                </p>
+                <p><b>How many employees do you currently have?</b></p>
+                <p>
+                    <label for="cardtype">Number of Employees</label>
+                    <select id="Select1" name="cardtype" data-nullable="true" data-field="number_of_employees">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10-20</option>
+                        <option>20-50</option>
+                        <option>50-100</option>
+                        <option>100+</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="button" placeholder="Previous" commandname="PreviousStep" commandarg="organization_id" autocomplete="off">Previous</button>
+                    <button type="button" name="data-submit" placeholder="Next" autocomplete="off">Next</button>
+                </p>
+            </fieldset>
+        </div>
+<div role='emptyitemtemplate' >
+
+            No data retrived.
+        </div>

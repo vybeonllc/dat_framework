@@ -1,0 +1,79 @@
+﻿<li role="headertemplate">Requests</li>
+<li role="itemplaceholder">
+    <li role="itemtemplate">
+        <table>
+            <tr>
+                <td></td>
+                <td data-field="request_id"></td>
+            </tr>
+            <tr>
+                <td>accept_type</td>
+                <td data-field="accept_type"></td>
+            </tr>
+            <tr>
+                <td>asset_guid</td>
+                <td data-field="asset_guid"></td>
+            </tr>
+            <tr>
+                <td>content_type</td>
+                <td data-field="content_type"></td>
+            </tr>
+            <tr>
+                <td>cookies</td>
+                <td data-field="cookies"></td>
+            </tr>
+            <tr>
+                <td>create_date</td>
+                <td data-field="create_date"></td>
+            </tr>
+            <tr>
+                <td>end_point</td>
+                <td data-field="end_point"></td>
+            </tr>
+            <tr>
+                <td>headers</td>
+                <td data-field="headers"></td>
+
+            </tr>
+            <tr>
+                <td>method</td>
+                <td data-field="method"></td>
+            </tr>
+            <tr>
+                <td>parameters</td>
+                <td data-field="parameters"></td>
+            </tr>
+            <tr>
+                <td>referrer</td>
+                <td data-field="referrer"></td>
+            </tr>
+            <tr>
+                <td>service</td>
+                <td data-field="service"></td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td data-field="url"></td>
+            </tr>
+            <tr>
+                <td>user_agent</td>
+                <td data-field="user_agent"></td>
+            </tr>
+            <tr>
+                <td>user_guid</td>
+                <td data-field="user_guid"></td>
+            </tr>
+            <tr>
+                <td>version</td>
+                <td data-field="version"></td>
+            </tr>
+            <tr>
+                <td>result</td>
+                <td data-field="result"></td>
+            </tr>
+        </table>
+
+    </li>
+</li>
+<li role="emptyitemtemplate">No data exists.</li>
+<li role="footertemplate"></li>

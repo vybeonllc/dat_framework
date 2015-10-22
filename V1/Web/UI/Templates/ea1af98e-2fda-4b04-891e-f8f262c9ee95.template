@@ -1,0 +1,44 @@
+<div role='itemtemplate' >
+
+            <fieldset>
+                <legend>Basic Information</legend>
+                <p>
+                    <b>Hello, is the owner available?</b>
+                    My Name is ___________ and I handle the local maps listings for Google, Yahoo, Bing and 25 other online directories - for your industry, in your area.
+                </p>
+                <p>
+                    A position has become available and I"m going to see if you qualify for the listing space.
+                </p>
+                <p><b>Are you the business owner?</b></p>
+                <p>
+                    <select data-field="business_owner">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </p>
+                <p><b>What is the street address of the business?</b></p>
+                <p>
+                    <label>Street Address</label>
+                    <input type="text" id="streetaddress" name="" placeholder="Street Address" data-field="street_address" autocomplete="off" />
+                </p>
+                <p><b>What City and State are you located in?</b></p>
+                <p>
+                    <label>City</label>
+                    <input type="text" id="Text1" name="" placeholder="City" data-field="city" autocomplete="off" /><br />
+                    <label>State</label>
+                    <input type="text" id="Text8" name="" placeholder="State" data-field="state" autocomplete="off" />
+                </p>
+                <p><b>I have your Zip Code listed as:</b></p>
+                <p>
+                    <label>Zip Code</label>
+                    <input type="text" id="Text2" name="" placeholder="Zip Code" data-field="zip_code" autocomplete="off" />
+                </p>
+                <p>
+                    <button type="button" name="data-submit" placeholder="Next" autocomplete="off">Next</button>
+                </p>
+            </fieldset>
+        </div>
+<div role='emptyitemtemplate' >
+
+            No data retrived.
+        </div>

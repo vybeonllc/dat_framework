@@ -1,0 +1,139 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Abel|Quicksand:300,400);
+
+body  {
+	background: url(/images/blurredBackground.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	font-size: 16px;
+}
+.wrapper  {
+	position: relative;
+}
+.backgroundBox1  {	
+	margin: 0 auto;
+	width: 25%;
+	min-height: 350px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 70%;
+	left: 35%;
+	-webkit-transform: translate(0%, 70%);
+    transform: translate(0%, 70%);
+	border-bottom: 5px solid #1e293b;
+}
+.backgroundBox2  {	
+	margin: 0 auto;
+	width: 25%;
+	min-height: 235px;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 155%;
+	left: 35%;
+	-webkit-transform: translate(0%, 155%);
+    transform: translate(0%, 155%);
+}
+.loginText  {
+	width: 25%;
+	min-height: 350px;
+	position: absolute;
+	top: 75%;
+	left: 35%;
+	padding: 5px 0 10px 0;
+	-webkit-transform: translate(0%, 75%);
+    transform: translate(0%, 75%);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+.loginText img  {
+	margin-bottom: 65px;
+}
+
+span  {
+	padding: 10px;
+	background-color: #1e293b;
+	display: inline-block;
+	width: 25%;
+}
+a:link    {
+	color:#CCCCCC;
+}
+a:visited {color:#CCCCCC;}
+a:hover   {
+	color:#c1974d;
+	cursor:pointer;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease; 
+}
+a:active  {color:#CCCCCC;}
+
+input[type=text]  {
+	font-family: 'Quicksand', sans-serif;
+}
+input  {
+	background: rgba(255,255,255,0.9);
+	padding: 10px;
+	border: none;
+	width: 55%;
+	margin: 5px 0 5px -5px;
+	
+}
+
+@media (max-width: 1168px)
+{
+	.backgroundBox1, .backgroundBox2, .loginText  {
+		width: 40%
+	}
+}
+
+@media (max-width: 640px)
+{
+	.backgroundBox1  {	
+		width: 95%;
+		min-height: 350px;
+		top: 2.5%;
+		left: 2.5%;
+		-webkit-transform: translate(0%, 2.5%);
+    	transform: translate(0%, 2.5%);
+}
+	.backgroundBox2  {	
+		margin: 0 auto;
+		width: 95%;
+		min-height: 235px;
+		top: 2.5%;
+		left: 2.5%;
+		-webkit-transform: translate(0%, 54%);
+    	transform: translate(0%, 54%);
+}
+	.loginText  {
+		width: 95%;
+		min-height: 200px;
+		top: 5%;
+		left: 2.5%;
+		padding: 20px 0 10px 0;
+		-webkit-transform: translate(0%, 2.5%);
+    	transform: translate(0%, 2.5%);
+}
+	input  {
+		width: 80%;
+		margin: 5px 0 5px 0;
+	}
+	span  {
+		display: none;
+	}
+	.loginText img  {
+		width: 85%;
+		margin-bottom: 30px;
+	}
+	.loginText p  {
+		font-size: 12px;
+	}
+	}

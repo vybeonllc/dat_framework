@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03CAF698-563F-46B8-A31D-802F27170493}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dat.V1.Web.UI</RootNamespace>
+    <AssemblyName>Dat.V1.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\MySql.Data.6.9.5\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewPage1\index.html">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="NewPage1\NewPage1.datx.css" />
+    <Content Include="NewPage1\NewPage1.datx.js" />
+    <Content Include="NewPage1\style.css" />
+    <Content Include="Scripts\Dat.V1.Services.Dat.js" />
+    <Content Include="Scripts\Dat.V1.AssetPool.js" />
+    <Content Include="Scripts\Dat.V1.Controls.FormView.js" />
+    <Content Include="Scripts\Dat.V1.Controls.FormViewItem.js" />
+    <Content Include="Scripts\Dat.V1.Controls.FormViewItemType.js" />
+    <Content Include="Scripts\Dat.V1.Controls.FormViewTemplate.js" />
+    <Content Include="Scripts\Dat.V1.Controls.js" />
+    <Content Include="Scripts\Dat.V1.Controls.ListViewItemType.js" />
+    <Content Include="Scripts\Dat.V1.Controls.ListViewItem.js" />
+    <Content Include="Scripts\Dat.V1.Controls.DataBinder.js" />
+    <Content Include="Scripts\Dat.V1.Controls.ListView.js" />
+    <Content Include="Scripts\Dat.V1.Controls.ListViewTemplate.js" />
+    <Content Include="Scripts\Dat.V1.Controls.TextBox.js" />
+    <Content Include="Scripts\Dat.V1.Services.Leads.js" />
+    <Content Include="Scripts\Dat.V1.Services.Standards.js" />
+    <Content Include="Scripts\Dat.V1.Services.Sync.js" />
+    <Content Include="Scripts\Dat.V1.Utils.WebMessaging.js" />
+    <Content Include="Scripts\Dat.V1.Utils.WebMessaging.Listener.js" />
+    <Content Include="Scripts\oldDat.V1.Controls.js" />
+    <Content Include="Scripts\Dat.V1.js" />
+    <Content Include="Scripts\Dat.V1.Services.Administrative.js" />
+    <Content Include="Scripts\Dat.V1.Services.Common.js" />
+    <Content Include="Scripts\Dat.V1.Services.Developement.js" />
+    <Content Include="Scripts\Dat.V1.Services.js" />
+    <Content Include="Scripts\Dat.V1.Services.Media.js" />
+    <Content Include="Scripts\Dat.V1.Services.Training.js" />
+    <Content Include="Scripts\Dat.V1.Utils.ChromeExt.js" />
+    <Content Include="Scripts\Dat.V1.Utils.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\Scripts.js" />
+    <Content Include="Step1\main.datx.css" />
+    <Content Include="Step1\reset.datx.css" />
+    <Content Include="Step1\Step1.datx.css" />
+    <Content Include="Step1\Step1.datx.js" />
+    <Content Include="Tracking.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Welcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewPage1\NewPage1.datx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="NewPage1\NewPage1.structure.datx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Step1\Step1.datx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Step1\Step1.structure.datx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\development.pubxml" />
+    <None Include="Properties\PublishProfiles\PRODUCTION.pubxml" />
+    <None Include="Properties\PublishProfiles\Staging.pubxml" />
+    <None Include="Properties\PublishProfiles\VybeOn PRODUCTION.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Staging.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Controls\Controls.csproj">
+      <Project>{27c7f520-2f00-49b4-a8d1-ddb8cf355359}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\HttpModules\HttpModules.csproj">
+      <Project>{7243ac0c-9841-42bd-bd79-4560466203d5}</Project>
+      <Name>HttpModules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Administrative\Administrative.csproj">
+      <Project>{7f0ed24e-6864-4462-a2fd-1d33a6413bbb}</Project>
+      <Name>Administrative</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Membership.Authentication\Membership.Authentication.csproj">
+      <Project>{f290c4fd-1126-485e-902a-24a0dc8d3377}</Project>
+      <Name>Membership.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Membership\Membership.csproj">
+      <Project>{063b3a0b-218d-440a-a245-2fd655b5eb1b}</Project>
+      <Name>Membership</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\Controls\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23529</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18520/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

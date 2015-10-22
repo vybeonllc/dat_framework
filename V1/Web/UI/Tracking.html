@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="Scripts/Scripts.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Controls.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Services.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Services.Common.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Services.Administrative.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Utils.js"></script>
+    <script src="http://localhost:1883/Scripts/Dat.V1.Services.Developement.js"></script>
+</head>
+<body>
+
+    <listview id="Listview2" templatename="request"
+        onitemdatabinding="EventHandlers.TestListView.OnItemDataBinding"
+        onitemdatabound="EventHandlers.TestListView.OnItemDataBinding"
+        ondatabinding="EventHandlers.TestListView.OnDataBinding"
+        ondatabound="EventHandlers.TestListView.OnDataBound"
+        onheaderinitialized="EventHandlers.TestListView.OnHeaderInitialized"
+        onfooterinitialized="EventHandlers.TestListView.OnFooterInitialized"
+        onpagerinitialized="EventHandlers.TestListView.OnPagerInitialized"
+        onready="EventHandlers.TestListView.OnReady"
+        onitemcommand="EventHandlers.TestListView.OnItemCommand"
+        onsuggestionselected="EventHandlers.TestListView.OnSuggestionSelected"
+        onerror="EventHandlers.TestListView.OnError">
+        <DataBinder  PageSize="50" StartIndex="0" Interval="10000000" DataProvider="Dat.V1.Services.Administrative.Tracking.Request.Get" />
+    </listview>
+
+    <script>
+        var EventHandlers = {
+            TestListView: {
+                OnItemDataBinding: function (listviewitem, listview) {
+                    var t = true;
+                },
+                OnItemCommand: function (e) {
+                }
+            }
+        };
+        var created_controls = new Array();
+        var $page = jQuery("body");
+        jQuery(Dat.V1.Controls.RegisteredControls).each(function (i, v) {
+            $page.find(v).each(function (index, val) {
+                var $val = jQuery(val);
+                var $placeholder = $val.parent();
+                var $definition = jQuery($val).clone(true);
+                $val.remove();
+                created_controls.push(new Dat.V1.Controls.UserControl({ Container: $placeholder, TagName: $definition.attr("TagName"), ControlName: v, ID: $definition.attr("ID"), Definition: $definition, AutoInit: true }));
+            });
+        });
+
+    </script>
+</body>
+</html>
